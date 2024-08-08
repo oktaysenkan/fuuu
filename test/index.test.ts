@@ -1,5 +1,5 @@
 import { test, assert, vi } from "vitest"
-import { f } from "../src"
+import * as f from "../src"
 
 test("resolve", async () => {
   const mockFn = vi.fn().mockResolvedValue(1) as () => Promise<number>

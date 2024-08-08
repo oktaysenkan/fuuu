@@ -13,7 +13,7 @@ npm install fuuu
 ## Usage
 
 ```ts
-import { f } from "fuuu"
+import * as f from "fuuu"
 
 interface People {
   name: string

@@ -1,15 +1,19 @@
-interface Success<T> {
+export interface Success<T> {
   data: T
   error: null
 }
 
-interface Failure<E extends Error> {
+export interface Failure<E extends Error = Error> {
   data: null
   error: E
 }
 
-export type Result<T extends any, E extends Error> = Success<T> | Failure<E>
+export type Result<T extends any, E extends Error = Error> =
+  | Success<T>
+  | Failure<E>
 
 export type SafeFunctionPayload<T> = () => Promise<T>
 
-export type SafeFunctionResult<T, E extends Error> = Promise<Result<T, E>>
+export type SafeFunctionResult<T, E extends Error = Error> = Promise<
+  Result<T, E>
+>
