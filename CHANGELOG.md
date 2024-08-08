@@ -1,5 +1,12 @@
 
 
+## [0.0.3](https://github.com/oktaysenkan/fuuu/compare/v0.0.2...v0.0.3) (2024-08-08)
+
+
+### Bug Fixes
+
+* resolve package.json exports ([773f648](https://github.com/oktaysenkan/fuuu/commit/773f6488ebbc98392bec440370ec9a5a3cb8a4b6))
+
 ## [0.0.2](https://github.com/oktaysenkan/fuuu/compare/v0.0.1...v0.0.2) (2024-08-08)
 
 
