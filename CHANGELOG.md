@@ -1,5 +1,13 @@
 
 
+## [0.0.4](https://github.com/oktaysenkan/fuuu/compare/v0.0.3...v0.0.4) (2024-08-09)
+
+
+### Features
+
+* add syncSafe function ([9b30292](https://github.com/oktaysenkan/fuuu/commit/9b30292e21cb05888a58f1cc0086bddbbdc31530))
+* implement timeout and retry functionally ([2ea69a9](https://github.com/oktaysenkan/fuuu/commit/2ea69a9a9c6e9d5fa977b6c9b5a52223d1f0ad02))
+
 ## [0.0.3](https://github.com/oktaysenkan/fuuu/compare/v0.0.2...v0.0.3) (2024-08-08)
 
 

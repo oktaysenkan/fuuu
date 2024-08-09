@@ -1,6 +1,6 @@
 {
   "name": "fuuu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Safely execute asynchronous functions",
   "publishConfig": {
     "access": "public"
