@@ -1,7 +1,8 @@
 {
   "name": "fuuu",
   "version": "0.0.5",
-  "description": "Safely execute asynchronous functions",
+  "description": "TypeScript utility to safely execute functions",
+  "homepage": "https://github.com/oktaysenkan/fuuu",
   "publishConfig": {
     "access": "public"
   },
