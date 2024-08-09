@@ -1,6 +1,9 @@
-# fuuu
-
-A TypeScript utility function to safely execute asynchronous functions.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d2796ecb-9aa4-4e42-a172-1d4d1d9a96fd" width="150px" />
+</p>
+<h1 align="center">fuu</h1>
+<p align="center">A TypeScript utility function to safely execute asynchronous functions.</p>
+<hr />
 
 ## Installation
 
