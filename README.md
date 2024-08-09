@@ -63,3 +63,45 @@ const vader = await f.safe(getVaderDetails, {
 
 const isTimeoutError = vader.error instanceof f.TimeoutError
 ```
+
+## Motivation
+
+In software development, handling asynchronous operations and potential errors gracefully is crucial for building robust applications. Traditionally, developers rely on try-catch blocks to manage errors in asynchronous code. While this approach works, it can lead to verbose and repetitive code, making it harder to maintain and reason about.
+
+The fuuu library simplifies this process by providing a clean and concise way to handle errors in asynchronous functions. Instead of wrapping every function call in a try-catch block, fuuu allows you to safely execute functions and handle errors more elegantly. With features like retries and timeouts, fuuu ensures that your application can handle transient errors and network issues without losing stability.
+
+By using fuuu, you reduce boilerplate code and make your error-handling strategy more consistent across your application. This not only improves code readability but also makes it easier to manage complex asynchronous workflows, leading to more reliable and maintainable software.
+
+```ts
+import * as f from "fuuu"
+
+const withTryCatch = async () => {
+  let profile: Profile | null = null
+
+  try {
+    profile = await fetchUserProfileById(1)
+  } catch (e) {
+    throw new Error("An error occurred while fetching profile")
+  }
+
+  try {
+    const friends = await fetchFriendsByAccountId(profile.accountId)
+
+    return { profile, friends }
+  } catch (e) {
+    return { profile, friends: null }
+  }
+}
+
+const withFuuu = async () => {
+  const profile = await f.safe(() => fetchUserProfileById(1))
+
+  if (profile.error) throw new Error("An error occurred while fetching profile")
+
+  const friends = await f.safe(() =>
+    fetchFriendsByAccountId(profile.data.accountId),
+  )
+
+  return { profile: profile.data, friends: friends.data }
+}
+```
