@@ -14,6 +14,12 @@ export type Result<T extends any, E extends Error = Error> =
 
 export type SafeFunctionPayload<T> = () => Promise<T> | T
 
+export interface SafeFunctionOption {
+  retries?: number
+  retryDelay?: number
+  timeout?: number
+}
+
 export type SafeFunctionResult<T, E extends Error = Error> = Promise<
   Result<T, E>
 >

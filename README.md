@@ -38,3 +38,22 @@ const main = async () => {
   console.log(vader.data)
 }
 ```
+
+#### Retries
+
+```ts
+const vader = await f.safe(getVaderDetails, {
+  retries: 3,
+  retryDelay: 1000,
+})
+```
+
+#### Timeout
+
+```ts
+const vader = await f.safe(getVaderDetails, {
+  timeout: 3000,
+})
+
+const isTimeoutError = vader.error instanceof f.TimeoutError
+```
