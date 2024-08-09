@@ -1,5 +1,12 @@
 
 
+## [0.0.7](https://github.com/oktaysenkan/fuuu/compare/v0.0.5...v0.0.7) (2024-08-09)
+
+
+### Features
+
+* bump version ([4f35cfa](https://github.com/oktaysenkan/fuuu/commit/4f35cfa76f95d36b7d9676d4870a64c335e6b09a))
+
 ## [0.0.5](https://github.com/oktaysenkan/fuuu/compare/v0.0.4...v0.0.5) (2024-08-09)
 
 ## [0.0.4](https://github.com/oktaysenkan/fuuu/compare/v0.0.3...v0.0.4) (2024-08-09)
