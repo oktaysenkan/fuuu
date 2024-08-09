@@ -1,6 +1,6 @@
 {
   "name": "fuuu",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TypeScript utility to safely execute functions",
   "homepage": "https://github.com/oktaysenkan/fuuu",
   "publishConfig": {
